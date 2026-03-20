@@ -146,7 +146,7 @@
   background: transparent;
   transition: border-color 0.3s ease;
   inline-size: 39px;
-  block-size: 36px; 
+  block-size: 36px;
 }
 
 .card__icon-button:focus {
@@ -296,7 +296,7 @@
 }
 
 .filter_sepia {
-  filter: sepia(80%); 
+  filter: sepia(80%);
 }
 
 .filter_drop-shadow {
