@@ -11,4 +11,5 @@
   --container-width: clamp(375px, 260.564px + 30.516vw, 700px);
   --accent_color: #000000;
   --button-hover-color: #fff;
+  --animation-fill-color: #ff0000;
 }

@@ -9,3 +9,41 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+/* Подготовка точки трансформации, чтобы сердце росло из центра */
+.like-icon, .heart {
+  transform-origin: center;
+}
+
+/* Привязка анимаций при наличии класса .is-liked */
+.like-icon.is-liked .heart {
+  animation: scale-heart 0.3s ease-in 0.1s 1;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-flash 0.3s ease-in 0.3s 1;
+}
+
+/* Сами анимации */
+@keyframes scale-heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes sparks-flash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
